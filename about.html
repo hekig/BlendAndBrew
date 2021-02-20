@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/carousel/">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Play&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+
+<link rel="stylesheet" href="style.css">
+
+<title>Blend & Brew</title>
+
+
+    <html>
+        <style>
+        
+.card {
+  box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.2);
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+}
+
+.price {
+  color: rgb(0, 0, 0);
+  font-size: 22px;
+}
+
+.card button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+.card button:hover {
+  opacity: 0.7;
+}
+        .responsive {
+        max-width: 100%;
+        height: auto;
+        }
+        .parallax {
+/* The image used */
+background-image: url("./images/image\ croped.jpg");
+
+/* Set a specific height */
+min-height: 600px; 
+
+
+
+/* Create the parallax scrolling effect */
+background-attachment: fixed;
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+}
+       
+/* Float four columns side by side */
+.column {
+  float: left;
+  width: 25%;
+  padding: 0 45px;
+}
+
+/* Remove extra left and right margins, due to padding */
+.row {margin: 0 -5px;}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive columns */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+
+/* Style the counter cards */
+.card {
+  box-shadow: 0 4px 8px 0 rgb(255, 255, 255);
+  padding: 16x;
+  text-align: center;
+  background-color: #ffffff;
+}
+</style>
+        <body class="page-top">
+        
+            <header class="header">     
+            <a class="logo" href=""><img src="images/17__1__0jD_icon.ico" alt="" height="50px"></a>
+            <input class="menu-btn" type="checkbox" id="menu-btn" />
+            <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+            <ul class="menu">
+                <li><a href="index.html" class="link link-theme link-arrow">HOME</a></li>
+                <li><a href="Products.html" class="link link-theme link-arrow">PRODUCTS</a></li>
+                <li><a href="#three" class="link link-theme link-arrow">CONTACT</a></li>
+                <li><a href="about.html" class="link link-theme link-arrow">ABOUT</a></li>
+            </ul>
+            </header>
+        
+            <div>
+        
+            <div id="main" class="main">
+        
+            <section class="intro">
+        
+                <article class="container">
+        
+                <h1 >
+                    Ab<span style="color:rgb(255, 153, 0) ;">ou</span>t
+                    </h1>
+      <div class="parallax"></div>
+                <h2 class="link link-theme link-arrow">
+                   About 
+
+                    </h2>
+        
+                <p>  <img src="./2 (2).png" alt="">
+                      Perfect for EVERYONE! We cater to people who want to start their own business with small capital. Open for retail, wholesale, for personal use, and even for gift giving that suits all occasions!
+                </p>
+        
+                </article>
+        
+            </section>
+            <!-- /intro -->
+
+
+
+            
+            <section class="work">
+        
+            <article class="container" id="one">
+        
+                <h2 class="link link-theme link-arrow" >
+                   What is dripp Coffee?
+                    </h2>
+    
+                <div> 
+                    The drip coffee is very similar to Turkish coffee, dripping through a filter so that only liquid without residual ground coffee enters the cup. The result of this method is a coffee of lesser taste and no precipitate at the bottom of the cup. Also, the filter absorbs the oils contained in the coffee, so it has no foam unless a metal filter is used. Drip coffee is a way of cooking coffee that is common in the West, especially in North America. Drip coffee or Filter coffee can be made in appliances that have a permanent or removable filter built-in, or by manually pouring hot over ground coffee contained in the paper, metal or fabric filters. In this way, the water gradually pours the coffee into the filter. Underneath is a placed a jug into which the filtered coffee is poured. It’s similar but even weaker than espresso coffee. The water flowing through the coffee is not pressurized, so the aroma and texture are different. Espresso coffee is very roasted but finely ground, while the filter coffee is a little less roasted and sharper ground. Today, there are special machines for the quick preparation of filter coffee.
+                </div>
+        
+            </article>
+        
+            <article class="container" id="two">
+                <p>
+                    <a href=".footer" class="link link-theme link-arrow" title="Let’s Build Something Great">Barako Coffee</a>
+                </p>
+        
+                    <div class="row g-0 bg-light position-relative">
+                        <div class="col-md-6 mb-md-0 p-md-4">
+                          <img src="images/Hazelnut.png" class="img-fluid"alt="..." class="center">
+
+                        </div>
+
+
+
+
+                          <h5 class="un">Columns with stretched link</h5>
+                          <p class="un">Another instance of placeholder content for this other
+                               custom component. It is intended to mimic what some real-world content would look like, and we're using it here to give the component a bit of body and size.</p>
+                          <a href="#" class="stretched-link">Go somewhere</a>
+                        </div>
+                      </div>
+            </article>
+        
+            <article class="container" id="three">
+                <h2 class="un">
+                    The Gregor Samsa story part three
+                    </h2>
+        <img src="./images/Benguet.png"  style="float: left;" alt="">
+                <p >
+                </p>
+            </article>
+        
+            <article class="container" id="four">
+        
+                <h2>
+                    The Gregor Samsa story part four
+                    </h2>
+        
+                <p>    </p>
+        
+            </article>
+            </article>
+        
+            </section>
+            <!-- /work -->
+            
+            
+                <!-- /footer -->
+        
+            
+            </div>
+        
+        
+        </div>
+        <!-- end div container -->
+        </body>
+        
+<footer class="footer-distributed">
+
+  <div class="footer-left">
+
+      <h3 >Blend<span>&</span>Brew</h3>
+
+      <p class="footer-links">
+          <a href="index.html">Home</a>
+          |
+          <a href="Products.html">Products</a>
+          |
+          <a href="#">About</a>
+          |
+          <a href="#">Contact</a>
+      </p>
+
+      <p class="footer-company-name">©2021 Blend & Brew.</p>
+  </div>
+
+  <div class="footer-center">
+      <div>
+          <i class="fa fa-map-marker"></i>
+            <p><span>Baguio
+              </span>
+              Country club</p>
+      </div>
+
+      <div>
+          <i class="fa fa-phone"></i>
+          <p>09..</p>
+      </div>
+      <div>
+          <i class="fa fa-envelope"></i>
+          <p><a href="mailto:support@eduonix.com">Blend&Brew.com</a></p>
+      </div>
+  </div>
+  <div class="footer-right">
+      <p class="footer-company-about">
+          <span>About Blend&Brew</span>
+        Blend&Brew.....</p>
+      <div class="footer-icons"> 
+          <a href="#"><i class="fa fa-facebook"></i></a>
+          <a href="#"><i class="fa fa-twitter"></i></a>
+          <a href="#"><i class="fa fa-instagram"></i></a>
+          <a href="#"><i class="fa fa-linkedin"></i></a>
+          <a href="#"><i class="fa fa-youtube"></i></a>
+      </div>
+  </div>
+</footer>
+
+        </html>
+</body>
+</html>
