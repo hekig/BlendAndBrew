@@ -1,192 +1,246 @@
-   <!DOCTYPE html>
-    <html lang="en"> 
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="description" content="">
-        <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/carousel/">
-        <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Play&display=swap" rel="stylesheet"> 
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <link rel="sortcut icon" type="imag/x-icon" href="images/favicon.ico">
-    
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Play&display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="sortcut icon" type="imag/x-icon" href="images/favicon.ico" />
 
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="assets/css/style.css" />
 
     <title>Blend & Brew</title>
 
+    <style>
+      .responsive {
+        max-width: 100%;
+        height: auto;
+      }
 
-        <html>
-            <style>
+      .parallax {
+        /* The image used */
+        background-image: url("./assets/images/image\ croped.jpg");
 
-            .responsive {
-            max-width: 100%;
-            height: auto;
-            }
-            .parallax {
-  /* The image used */
-  background-image: url("./images/image\ croped.jpg");
+        /* Set a specific height */
+        min-height: 600px;
 
-  /* Set a specific height */
-  min-height: 600px; 
+        /* Create the parallax scrolling effect */
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+    </style>
+  </head>
 
+  <body class="page-top">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="#">Blend&Brew</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Dropdown
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+            </li>
+          </ul>
+          <form class="d-flex">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+    </nav>
 
+    <!-- 
+    <header class="header" style="padding-right: 60px">
+      <a class="logo" href=""
+        ><img src="assets/images/17__1__0jD_icon.ico" alt="" height="50px"
+      /></a>
+      <input class="menu-btn" type="checkbox" id="menu-btn" />
+      <label class="menu-icon" for="menu-btn"
+        ><span class="navicon"></span
+      ></label>
+      <ul class="menu">
+        <li>
+          <a href="index.html" class="link link-theme link-arrow">HOME</a>
+        </li>
+        <li>
+          <a href="Products.html" class="link link-theme link-arrow"
+            >PRODUCTS</a
+          >
+        </li>
+        <li><a href="" class="link link-theme link-arrow">CONTACT</a></li>
+        <li>
+          <a href="about.html" class="link link-theme link-arrow">ABOUT</a>
+        </li>
+      </ul>
+    </header>-->
 
-  /* Create the parallax scrolling effect */
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
+    <div class="parallax"></div>
 
+    <section class="work">
+      <article class="container" id="one">
+        <h2 class="link link-theme link-arrow">What is dripp Coffee?</h2>
 
-            </style>
-            <body class="page-top" >
-            
-                <header class="header" style="padding-right: 60px;">     
-                <a class="logo" href=""><img src="images/17__1__0jD_icon.ico" alt="" height="50px"></a>
-                <input class="menu-btn" type="checkbox" id="menu-btn" />
-                <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
-                <ul class="menu">
-                    <li><a href="index.html" class="link link-theme link-arrow">HOME</a></li>
-                    <li><a href="Products.html" class="link link-theme link-arrow">PRODUCTS</a></li>
-                    <li><a href="" class="link link-theme link-arrow">CONTACT</a></li>
-                    <li><a href="about.html" class="link link-theme link-arrow">ABOUT</a></li>
-                </ul>
-                </header>
-            
-            
-             <div class="parallax"></div>
-            
-                
-            
-            
-                   
-            
-         
-             
-            
-                    
-                <!-- /intro -->
+        <div>
+          <h3>
+            <img
+              src="assets/images/Webp.net-resizeimage.jpg"
+              alt=""
+              style="float: left; margin-right: 10px"
+              height="300px"
+            />
+            The drip coffee is very similar to Turkish coffee, dripping through
+            a filter so that only liquid without residual ground coffee enters
+            the cup. The result of this method is a coffee of lesser taste and
+            no precipitate at the bottom of the cup. Also, the filter absorbs
+            the oils contained in the coffee, so it has no foam unless a metal
+            filter is used. Drip coffee is a way of cooking coffee that is
+            common in the West, especially in North America. Drip coffee or
+            Filter coffee can be made in appliances that have a permanent or
+            removable filter built-in, or by manually pouring hot over ground
+            coffee contained in the paper, metal or fabric filters. In this way,
+            the water gradually pours the coffee into the filter. Underneath is
+            a placed a jug into which the filtered coffee is poured. It’s
+            similar but even weaker than espresso coffee. The water flowing
+            through the coffee is not pressurized, so the aroma and texture are
+            different. Espresso coffee is very roasted but finely ground, while
+            the filter coffee is a little less roasted and sharper ground.
+            Today, there are special machines for the quick preparation of
+            filter coffee.
+          </h3>
+        </div>
 
-    
-                
-                <section class="work">
-            
-                <article class="container" id="one">
-            
-                    <h2 class="link link-theme link-arrow" >
-                       What is dripp Coffee?
-                        </h2>
-        
-                    <div>
-                        <h3 > <img src="./images/Webp.net-resizeimage.jpg" alt="" style="float: left;margin-right: 10px;" height="300px">
-                        The drip coffee is very similar to Turkish coffee, dripping through a filter so that only liquid without residual ground coffee enters the cup. The result of this method is a coffee of lesser taste and no precipitate at the bottom of the cup. Also, the filter absorbs the oils contained in the coffee, so it has no foam unless a metal filter is used. Drip coffee is a way of cooking coffee that is common in the West, especially in North America. Drip coffee or Filter coffee can be made in appliances that have a permanent or removable filter built-in, or by manually pouring hot over ground coffee contained in the paper, metal or fabric filters. In this way, the water gradually pours the coffee into the filter. Underneath is a placed a jug into which the filtered coffee is poured. It’s similar but even weaker than espresso coffee. The water flowing through the coffee is not pressurized, so the aroma and texture are different. Espresso coffee is very roasted but finely ground, while the filter coffee is a little less roasted and sharper ground. Today, there are special machines for the quick preparation of filter coffee.
-                   
-                    </h3>
-                    </div>
-<img src="./images/2018-05-31-TomAndWarren-CoffeeCourtesy-DistractedStudents-MelbournePrices-WorldNoTobaccoDay.jpg" alt="" style="float: right;" height="200px">                                    <h2 style="text-align: center;">About</h2>
-                            <h3>   <br> <br> <br> <br><br>
-                                Perfect for EVERYONE! We cater to people who want to start their own business with small capital. Open for retail, wholesale, for personal use, and even for gift giving that suits all occasions!
-                            <h3>
-            
-                           
-                                        
-                            </div>
-                      
-                               <hr>  <br>
-                              
-                      <img src="./images/images.jpg" alt="" style="float: left;" height="100px">          <h3  >Hello Coffee Lovers!!! ❤☕☕ <h3> 
-                      
-                           
-                                <p> <br>
-                                 Our coffee is freshly ground from Cordillera and only packed upon order to maintain its premium taste. <br>
-                                
-                                
-                                Available Flavors: <br>
-                               ✔ Benguet <br>
-                                ✔Barako <br>
-                                ✔Arabica <br>
-                                ✔Hazelnut (flavored) <br>
-                                ✔Vanilla (flavored) <br>
-                                
-                                SHALOM! 🤗🤗</p>
-                         
-                         <a href="Products.html"> 
-                               <div class="box-1">
-                                <div class="btn btn-one">
-                                <span >Go to Products</span>
-                                </div>
-                              </div>
-                                </div>
-                          </div>
-</a>
-            
-                  
-                </section>
-                <!-- /work -->
-                
-                
-                    <!-- /footer -->
-            
-                
-                </div>
-            
-            
+        <div>
+          <img
+            src="assets/images/2018-05-31-TomAndWarren-CoffeeCourtesy-DistractedStudents-MelbournePrices-WorldNoTobaccoDay.jpg"
+            alt=""
+            style="float: right"
+            height="200px"
+          />
+          <h2 style="text-align: center">About</h2>
+          <h3>
+            <br />
+            <br />
+            <br />
+            <br /><br />
+            Perfect for EVERYONE! We cater to people who want to start their own
+            business with small capital. Open for retail, wholesale, for
+            personal use, and even for gift giving that suits all occasions!
+          </h3>
+        </div>
+
+        <hr />
+        <br />
+
+        <img
+          src="assets/images/images.jpg"
+          alt=""
+          style="float: left"
+          height="100px"
+        />
+        <h3>Hello Coffee Lovers!!! ❤☕☕</h3>
+
+        <p>
+          <br />
+          Our coffee is freshly ground from Cordillera and only packed upon
+          order to maintain its premium taste. <br />
+
+          Available Flavors: <br />
+          ✔ Benguet <br />
+          ✔Barako <br />
+          ✔Arabica <br />
+          ✔Hazelnut (flavored) <br />
+          ✔Vanilla (flavored) <br />
+
+          SHALOM! 🤗🤗
+        </p>
+
+        <a href="products.html">
+          <div class="box-1">
+            <div class="btn btn-one">
+              <span>Go to Products</span>
             </div>
-            <!-- end div container -->
-            </body>
-            
-  <footer class="footer-distributed">
+          </div>
+        </a>
+      </article>
+    </section>
 
+    <footer class="footer-distributed">
       <div class="footer-left">
- 
-          <h3 >Blend<span>&</span>Brew</h3>
+        <h3>Blend<span>&</span>Brew</h3>
 
-          <p class="footer-links">
-              <a href="index.html">Home</a>
-              |
-              <a href="Products.html">Products</a>
-              |
-              <a href="#">About</a>
-              |
-              <a href="#">Contact</a>
-          </p>
+        <p class="footer-links">
+          <a href="index.html">Home</a>
+          |
+          <a href="products.html">Products</a>
+          |
+          <a href="#">About</a>
+          |
+          <a href="#">Contact</a>
+        </p>
 
-          <p class="footer-company-name">©2021 Blend & Brew.</p>
+        <p class="footer-company-name">©2021 Blend & Brew.</p>
       </div>
 
       <div class="footer-center">
-          <div>
-              <i class="fa fa-map-marker"></i>
-                <p><span>Baguio
-                  </span>
-                  Country club</p>
-          </div>
+        <div>
+          <i class="fa fa-map-marker"></i>
+          <p><span>Baguio </span> Country club</p>
+        </div>
 
-          <div>
-              <i class="fa fa-phone"></i>
-              <p>09..</p>
-          </div>
-          <div>
-              <i class="fa fa-envelope"></i>
-              <p><a href="mailto:support@eduonix.com">Blend&Brew.com</a></p>
-          </div>
+        <div>
+          <i class="fa fa-phone"></i>
+          <p>09..</p>
+        </div>
+        <div>
+          <i class="fa fa-envelope"></i>
+          <p><a href="mailto:support@eduonix.com">Blend&Brew.com</a></p>
+        </div>
       </div>
       <div class="footer-right">
-          <p class="footer-company-about">
-              <span>About Blend&Brew</span>
-            Blend&Brew.....</p>
-          <div class="footer-icons"> 
-              <a href="#"><i class="fa fa-facebook"></i></a>
-              <a href="#"><i class="fa fa-twitter"></i></a>
-              <a href="#"><i class="fa fa-instagram"></i></a>
-              <a href="#"><i class="fa fa-linkedin"></i></a>
-              <a href="#"><i class="fa fa-youtube"></i></a>
-          </div>
+        <p class="footer-company-about">
+          <span>About Blend&Brew</span>
+          Blend&Brew.....
+        </p>
+        <div class="footer-icons">
+          <a href="#"><i class="fa fa-facebook"></i></a>
+          <a href="#"><i class="fa fa-twitter"></i></a>
+          <a href="#"><i class="fa fa-instagram"></i></a>
+          <a href="#"><i class="fa fa-linkedin"></i></a>
+          <a href="#"><i class="fa fa-youtube"></i></a>
+        </div>
       </div>
-  </footer>
-
-            </html>
-    </body>
-    </html>
+    </footer>
+  </body>
+</html>
